@@ -120,5 +120,4 @@ paths:
                 $ref: "#/components/schemas/OBReadOffer1"
 components:
   schemas:
-    OBReadOffer1:
-      type: object
+    OBReadOffer1: {}

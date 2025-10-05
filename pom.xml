@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.openbanking.offers</groupId>
     <artifactId>offers-services</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>offers-services</name>
     <properties>
@@ -53,10 +53,6 @@
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-health</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.micrometer</groupId>
-            <artifactId>micrometer-registry-jmx</artifactId>
         </dependency>
         <dependency>
             <groupId>io.micrometer</groupId>
@@ -557,7 +553,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>false</fork>
-                    <mainClass>com.openbanking.offers.Application</mainClass>
+                    <jmxPort>9002</jmxPort>
                     <jvmArguments>-Dspring.application.admin.enabled=true
             -Xms128m
             -Xmx256m
